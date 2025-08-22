@@ -9,7 +9,6 @@ class TradeDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = trade.pnl >= 0 ? Colors.green : Colors.red;
     
-    // Determine asset image based on instrument name
     String assetImage = 'assets/images/default.png';
     if (trade.instrument.toLowerCase().contains('btc')) {
       assetImage = 'assets/images/btc.png';

@@ -6,7 +6,6 @@ class TradeRepo {
   List<Trade> get trades => _trades;
 
   TradeRepo() {
-    // Add dummy trades
     _addDummyTrades();
   }
 

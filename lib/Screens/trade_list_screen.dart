@@ -31,7 +31,6 @@ class _TradeListScreenState extends State<TradeListScreen> {
           final Trade t = trades[index];
           final color = t.pnl >= 0 ? Colors.green : Colors.red;
           
-          // Determine asset image based on instrument name
           String assetImage = 'assets/images/default.png';
           if (t.instrument.toLowerCase().contains('btc')) {
             assetImage = 'assets/images/btc.png';

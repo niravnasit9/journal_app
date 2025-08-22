@@ -30,8 +30,8 @@ class _AddTradeScreenState extends State<AddTradeScreen> {
       positionSize: double.tryParse(_position.text) ?? 1.0,
       notes: _notes.text.trim(),
       date: DateTime.now(),
-      pnl: 100.0, // Dummy PnL
-      result: "Win", // Dummy result
+      pnl: 100.0, 
+      result: "Win", 
     );
     TradeRepo().add(trade);
     ScaffoldMessenger.of(context).showSnackBar(
